@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #6D28D9;
+  --color-primary-hover: #4C1D95;
+  --color-primary-light: #F3E8FF;
+  --color-primary-glow: rgba(109, 40, 217, 0.28);
+  
+  --color-surface: #FFFFFF;
+  --color-surface-subtle: #F8F7FC;
+  --color-surface-lavender: #FDF7FF;
+  
+  --color-text-main: #181522;
+  --color-text-muted: #777387;
+  --color-text-subtle: #A39EB0;
+  
+  --color-border-main: #E9E5F0;
+  --color-border-focus: #6D28D9;
+
+  --color-accent-green: #16A34A;
+  --color-accent-amber: #F59E0B;
+  --color-accent-red: #DC2626;
+
+  --shadow-cinema-sm: 0 1px 3px rgba(109, 40, 217, 0.04), 0 1px 2px rgba(24, 21, 34, 0.03);
+  --shadow-cinema-md: 0 4px 14px -2px rgba(109, 40, 217, 0.08), 0 2px 6px -1px rgba(24, 21, 34, 0.04);
+  --shadow-cinema-lg: 0 12px 32px -4px rgba(109, 40, 217, 0.12), 0 4px 12px -2px rgba(24, 21, 34, 0.05);
+  --shadow-cinema-glow: 0 4px 20px 0 rgba(109, 40, 217, 0.32);
+}
+
+:root {
+  --background: #FFFFFF;
+  --foreground: #181522;
+}
+
+body {
+  color: var(--color-text-main);
+  background-color: #F8F7FC;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom utility components */
+.btn-primary {
+  background-color: #6D28D9;
+  color: #FFFFFF;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary:hover {
+  background-color: #4C1D95;
+  box-shadow: 0 4px 16px 0 rgba(109, 40, 217, 0.28);
+}
+
+.btn-secondary {
+  background-color: #F3E8FF;
+  color: #6D28D9;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-secondary:hover {
+  background-color: #E9E5F0;
+  color: #4C1D95;
+}
+
+.btn-outline {
+  background-color: #FFFFFF;
+  border: 1px solid #E9E5F0;
+  color: #181522;
+  font-weight: 500;
+  border-radius: 0.75rem;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-outline:hover {
+  background-color: #F8F7FC;
+  border-color: #6D28D9;
+  color: #6D28D9;
+}
